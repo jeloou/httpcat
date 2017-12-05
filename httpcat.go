@@ -44,6 +44,8 @@ func (s *Sent) writeLine(line string) bool {
 		return false
 	}
 
+	fmt.Print(line)
+
 	if s.Headers {
 		s.log(line)
 	} else {
